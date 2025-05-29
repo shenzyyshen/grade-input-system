@@ -63,6 +63,29 @@ def convert_to_gpa(percentage):
 
 
 
+def calculate_failing_grades(students):
+    failing_records = []
+    total_failing = 0
+
+    print("\n=== Failing Grades Per Student ===")
+    for student in students:
+        name = student['Name']
+        for subject in ['English', 'Math']:
+            grade = student[subject]
+            if grade < 60:
+                total_failing += 1
+                failing_records.append(f"{name} is failing in {subject} with a grade of {grade:.2f}")
+
+
+    for record in failing_records:
+        print(record)
+
+
+    return total_failing, failing_records
+
+
+
+
 def main():
     students = []
 
@@ -77,6 +100,7 @@ def main():
     display_all_students(students)
 
     average_english, average_math, overall_average = calculate_average_grades(students)
+    total_failing, failing_records = calculate_failing_grades(students)
 
 
     print("\n=== Average Grades per Subject===")
@@ -84,18 +108,14 @@ def main():
     print(f"Average Math Grade: {average_math:.2f} ({convert_to_gpa(average_math):.2f} GPA)")
     print(f"Overall Average Grade across all subjects: {overall_average:.2f}({convert_to_gpa(overall_average):.2f} GPA)")
 
+    print("\n=== Failing ===")
+    for record in failing_records:
+        print(record)
 
+    print(f"Total failing grades across all students: {total_failing}")
 
 if __name__=="__main__":
     main()
 
-
-
-   # average_grades_per_subject, overall_average_grade = calculate_average_grades(students)
-    #print("\nAverage grades per subject:")
-    #for subject, average_grade in average_grades_per_subject.items():
-     #   print(f"{subject}: {average_grade:.2f}")
-
-    #print(f"\nOverall average grade across all subjects: {overall_average_grade:.2f}")
 
 
