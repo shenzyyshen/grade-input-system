@@ -1,0 +1,31 @@
+Enter the student's name: Alice
+Enter the student's English grade: 88
+Enter the student's Math grade: 74
+Do you want to enter another student? (y/n): y
+
+Enter the student's name: Bob
+Enter the student's English grade: 55
+Enter the student's Math grade: 91
+Do you want to enter another student? (y/n): n
+
+=== All Student's Info ===
+Name: Alice
+ English Grade: 88.0
+ Math Grade: 74.0
+______________________________
+Name: Bob
+ English Grade: 55.0
+ Math Grade: 91.0
+______________________________
+
+=== Failing Grades Per Student ===
+Bob is failing in English with a grade of 55.00
+
+=== Average Grades per Subject===
+Average English Grade: 71.50 ( 2.00 GPA)
+Average Math Grade: 82.50 (3.00 GPA)
+Overall Average Grade across all subjects: 77.00(2.00 GPA)
+
+=== Failing ===
+Bob is failing in English with a grade of 55.00
+Total failing grades across all students: 1
