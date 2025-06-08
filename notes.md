@@ -11,3 +11,8 @@
 - 70–79  → 2.0
 - 60–69  → 1.0
 - Below 60 → 0.0 (failing)
+
+## display_all_students()
+- Loops through the students list and prints each entry
+- Uses `_` * 30 as a visual separator between students
+- Could be extended to support more subjects by iterating dict keys
