@@ -16,3 +16,8 @@
 - Loops through the students list and prints each entry
 - Uses `_` * 30 as a visual separator between students
 - Could be extended to support more subjects by iterating dict keys
+
+## Failing Grade Logic
+- Grade < 60 is considered failing
+- `failing_records` accumulates strings like "Name is failing in Subject with grade X"
+- Both the count and the full list are returned for flexible use in `main()`
