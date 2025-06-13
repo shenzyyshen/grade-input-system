@@ -21,3 +21,11 @@ python main.py
 - Separating data collection from analysis functions
 - GPA conversion with conditional ranges
 - Iterating a list of dicts to compute running totals
+
+## Project Structure
+
+```
+grade-input-system/
+├── main.py            # All functions and entry point
+└── sample_output.txt  # Example run with two students
+```
